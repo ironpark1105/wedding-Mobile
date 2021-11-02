@@ -18,10 +18,13 @@ a{
 body{
     font-size: 16px;
     font-family: 'Noto Sans KR', sans-serif;
+    max-width: 400px;
+    margin-top: 60px;
+    background-color: #ddd;
 }
 #title{
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background: #fff;
 }
 #main-visual{
@@ -39,10 +42,12 @@ body{
     height: 100%;
     position: absolute;
     opacity: 0.5;
+    object-fit: cover;
 }
 figure{
     position: relative;
     
+    border-bottom: 5px solid var(--main-color2);
 }
 figcaption{
     position: absolute;
@@ -53,7 +58,7 @@ figcaption{
 
 #title figure{
     width: 100%;
-    height: 64vh;
+    height: 424px;
 }
 
 #title figure figcaption span:last-child{
@@ -105,14 +110,14 @@ figcaption{
 /* 인삿말 */
 #intro{
     width: 100%;
-    height: 543px;
     position: relative;
     text-align: center;
     background: var(--main-color1);
     color: var(--main-color3);
     background: url('../image/dec3.png');
-    background-size: cover ;
+    background-size: 100% 100% ;
     background-position: center;
+    background-color: #fff;
     
 }
 
@@ -123,14 +128,14 @@ figcaption{
 .intro-box{
     padding-left: 43px;
     padding-right: 43px;
-    margin-bottom: 40px;
+    padding-bottom: 40px;
 }
 #intro p{
     font-size: 12px;
     line-height: 25px;
 }
 #intro .guest-box{
-    margin-bottom: 23px;
+    padding-bottom: 23px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -156,8 +161,9 @@ figcaption{
 /* 갤러리 346 */
 .gallery{
     text-align: center;
-    margin-top: 36px;
+    padding-top: 36px;
     width: 100%px;
+    background-color: #fff;
 }
 .gallery h2{
     padding-bottom: 36px;
@@ -196,7 +202,8 @@ figcaption{
 #youtube{
     width: 100%;
     height: auto;
-    margin-top: 70px;
+    padding-top: 70px;
+    background-color: #fff;
 }
 #youtube h2{
     text-align: center;
@@ -208,9 +215,10 @@ figcaption{
 
 /* 오시는길 */
 #map{
+    background: #fff;
     width: 100%;
     height: auto;
-    margin-top: 70px;
+    padding-top: 70px;
 }
 #map h2{
     text-align: center;
@@ -239,18 +247,20 @@ padding-right: 15px;
 /* 푸터 */
 footer{
     width: 100%;
-    height: 101px;
     background-color: var(--main-color1);
     margin-top: 52px;
     text-align: center;
     color: var(--main-color3);
+    padding-bottom: 50px;
 }
 footer h2{
-    padding-top: 24px;
+    padding: 24px;
     font-size: 24px;
 }
 footer p{
     font-size: 14px;
 }
-
+.all{
+    background: #fff;
+}
 
